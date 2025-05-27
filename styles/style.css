@@ -279,6 +279,11 @@ margin-bottom: 102px;
 .about__text {
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.about__text:last-child {
+    margin-bottom: 0px;
 }
 
 .footer {
