@@ -4,12 +4,12 @@
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     width: 1100px;
-    height: 293px;
     padding: 92px 50px 91px 50px;
 }
 
 .header__menu {
     display:flex;
+    justify-content: left;
 }
 
 .header__links-list {
@@ -53,10 +53,15 @@
 
 .address {
     max-width: 240px;
-    justify-self: end;
     line-height: 24.3px;
     font-size: 18px;
     font-style: normal;
+}
+
+/* Добавлено согласно ТЗ по расположению эллементов внутри блоков header footer*/
+
+.header__adress {
+    justify-self: end;
 }
 
 .cover {
@@ -136,7 +141,7 @@
     text-transform: uppercase;
     background-color: transparent;
     color: #fff;
-    border: 1px solid white;
+    border: 1px solid currentColor;
     z-index: 1;
 }
    
@@ -211,16 +216,13 @@
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    position: relative;
 }
 
 .card_type_book {
-    position: relative;
     background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    position: relative;
     background-image: url(../images/card-lot-03.jpg)
 }
 
@@ -256,7 +258,6 @@
 }
 
 .about__column {
-    height: 595px;
     padding: 35px 0 0 47px;
 }
 
@@ -284,26 +285,18 @@ margin-bottom: 102px;
 .footer {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
     width: 1100px;
-    height: 180px;
     padding: 1px 50px 82px 51px;
 }
 
-.footer_address {
-    max-width: 240px;
-    display: flex;
-    flex-direction: column;
+.footer__address {
     justify-self:left;
-    line-height: 24.3px;
-    font-size: 18px;
-    font-style: normal;
 }
 
 .footer__menu {
     display: flex;
-    flex: column;
     font-size: 18px;
+    justify-content: center;
 }
 
 .footer__menu-list {
